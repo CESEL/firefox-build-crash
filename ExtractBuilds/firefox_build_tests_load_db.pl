@@ -110,13 +110,8 @@ for my $gzipfile (@log_files) {
 	}
 	
 	if(-e $file){
-<<<<<<< Updated upstream
-		system("rm ".$file);
-		#system("mv ".$file.".gz /media/rupak/rupsar/firefox_builds/tbpl-logs-2012/02/");
-=======
 		system("gzip ".$file);
 		system("mv ".$file.".gz /media/rupak/SmallBackup/firefox_crashs/TBPL/extracted-2012/");
->>>>>>> Stashed changes
 	}
 	
 	# Load into database
